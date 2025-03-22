@@ -1,0 +1,124 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo & Contact Info */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.contact-info {
+    text-align: left;
+    font-size: 14px;
+}
+
+.contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Company Name with 3D Effect */
+.title {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #007BFF, #00D4FF);
+    padding: 10px 20px;
+    display: inline-block;
+    transform: perspective(500px) rotateX(15deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for 3D */
+.title:hover {
+    transform: perspective(500px) rotateX(5deg) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* Welcome Note */
+.welcome-note {
+    font-size: 18px;
+    background: #fff;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* IT Solutions Section */
+.services {
+    background: white;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Service List in Two Columns */
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.service-list ul {
+    list-style: disc;
+    padding: 0;
+    margin: 0;
+}
+
+.service-list li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
